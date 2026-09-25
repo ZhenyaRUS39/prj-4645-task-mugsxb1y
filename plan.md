@@ -3,48 +3,9 @@
 **Project:** `PRJ-894`  
 **Task ID:** `task-mugsxb1y`  
 **Repo:** `prj-4645-task-mugsxb1y`  
-**Progress:** 1/4 subtasks done
-
-## Summary
-
-Декомпозирую задачу на 4 последовательных этапа: инициализация репозитория, реализация ядра CLI, расширение функционала и финальное тестирование с документацией.
+**Progress:** 0/0 subtasks done
 
 ## Subtasks
-
-### ⏳ 1. Инициализировать репозиторий и структуру CLI
-
-- **ID:** `sub-1`
-- **Profile:** `20razrab1`
-- **Status:** `unknown`
-- **Description:** Создать репозиторий prj-4645-task-mugsxb1y, добавить README.md, package.json (или pyproject.toml), выбрать язык и CLI-фреймворк (Node.js + commander или Python + click/typer). Зафиксировать entry point и базовую структуру директорий src/, tests/.
-- **Test plan:** git init проходит, package.json/pyproject.toml валиден, директории src/ и tests/ созданы, entry point бинарь запускается через ./run --help
-
-### ⬜ 2. Реализовать ядро сжатия и базовые команды
-
-- **ID:** `sub-2`
-- **Profile:** `30razrab2`
-- **Status:** `pending`
-- **Description:** Реализовать модуль сжатия для основных форматов (zip, tar.gz), команды compress и decompress с флагами --input/-i, --output/-o, --format/-f. Добавить обработку ошибок и progress-индикатор для больших файлов.
-- **Test plan:** Запуск compress и decompress для zip/tar.gz возвращает корректные файлы, --help показывает все флаги, коды выхода 0 при успехе и !=0 при ошибке
-- **Dependencies:** `sub-1`
-
-### ⬜ 3. Расширить функционал: batch-режим и дополнительные форматы
-
-- **ID:** `sub-3`
-- **Profile:** `20razrab1`
-- **Status:** `pending`
-- **Description:** Добавить поддержку gzip, bz2, xz; реализовать команду batch для сжатия/распаковки директорий, флаги --level/-l (уровень сжатия), --recursive/-r, --exclude/-e для glob-исключений. Добавить конфиг-файл .compressrc.json.
-- **Test plan:** Команда batch корректно обрабатывает директорию с вложенной структурой, glob-исключения работают, --level влияет на размер, .compressrc.json читается и применяется
-- **Dependencies:** `sub-2`
-
-### ⬜ 4. Тесты, документация и CI
-
-- **ID:** `sub-4`
-- **Profile:** `30razrab2`
-- **Status:** `pending`
-- **Description:** Покрыть unit-тестами ключевые модули (pytest/jest), добавить интеграционные тесты CLI, написать подробный README с примерами, настроить GitHub Actions для запуска тестов на push/PR. Вернуть готовый diff Айтишнику для ревью.
-- **Test plan:** Все тесты проходят (coverage >= 70%), README содержит usage-примеры, GitHub Actions workflow запускается и зелёный на тестовом PR
-- **Dependencies:** `sub-3`
 
 
 ---
